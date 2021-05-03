@@ -1,8 +1,10 @@
-resource "aws_vpc" "evaluacion-vpc" {
-  cidr_block       = "10.0.1.0/24"
+##Creación del VPC
+resource "aws_vpc" "jg-219706-vpc" {
+  cidr_block       = "10.0.0.0/16"
   instance_tenancy = "default"
 
   tags = {
-    Name = "evaluacion-vpc"
+    Name = "jg-219706"
   }
 }
+
